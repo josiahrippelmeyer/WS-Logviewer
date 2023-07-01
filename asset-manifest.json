@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/WS-Logviewer/static/css/main.073c9b0a.css",
+    "main.js": "/WS-Logviewer/static/js/main.435163d7.js",
+    "static/js/787.7cb1c6d1.chunk.js": "/WS-Logviewer/static/js/787.7cb1c6d1.chunk.js",
+    "static/media/logo.svg": "/WS-Logviewer/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/WS-Logviewer/index.html",
+    "main.073c9b0a.css.map": "/WS-Logviewer/static/css/main.073c9b0a.css.map",
+    "main.435163d7.js.map": "/WS-Logviewer/static/js/main.435163d7.js.map",
+    "787.7cb1c6d1.chunk.js.map": "/WS-Logviewer/static/js/787.7cb1c6d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.435163d7.js"
+  ]
+}
