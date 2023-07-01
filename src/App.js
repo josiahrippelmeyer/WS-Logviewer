@@ -19,20 +19,21 @@ const LogViewer = ({ logFile }) => {
     fetch(logFile)
       .then((response) => response.json())
       .then((data) => {
+        console.log(data); // log the fetched data
         setLogData(data);
         setSortedLogData(data);
       });
   }, [logFile]);
 
   useEffect(() => {
-    const sortArray = [...sortedLogData];
+    const sortArray = [...logData];
     if (sortConfig.direction === "ascending") {
       sortArray.sort((a, b) => (a[sortConfig.key] > b[sortConfig.key] ? 1 : -1));
     } else {
       sortArray.sort((a, b) => (a[sortConfig.key] < b[sortConfig.key] ? 1 : -1));
     }
     setSortedLogData(sortArray);
-  }, [sortConfig]);
+  }, [sortConfig, logData]); // Here we added `logData` as a dependency
 
   const requestSort = (key) => {
     let direction = "ascending";
@@ -77,9 +78,9 @@ const LogViewer = ({ logFile }) => {
                   }
                 }}>
                 <td>
-                  {log.type === "1" && <img src="/success.png" alt="Success" />}
-                  {log.type === "2" && <img src="/warning.png" alt="Warning" />}
-                  {log.type === "3" && <img src="/error.png" alt="Error" />}
+                  {log.type === "1" && <img src={process.env.PUBLIC_URL + "/success.png"} alt="Success" />}
+                  {log.type === "2" && <img src={process.env.PUBLIC_URL + "/warning.png"} alt="Warning" />}
+                  {log.type === "3" && <img src={process.env.PUBLIC_URL + "/error.png"} alt="Error" />}
                 </td>
                 <td>{formattedDate}</td>
                 <td>{log.subject}</td>

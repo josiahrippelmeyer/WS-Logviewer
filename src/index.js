@@ -6,7 +6,7 @@ import "./App.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App logFile="/frontend-log-sample.json" />
+    <App logFile={process.env.PUBLIC_URL + "/frontend-log-sample.json"} />
   </React.StrictMode>,
   document.getElementById("root")
 );
