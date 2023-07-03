@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/WS-Logviewer/static/css/main.8cffd139.css",
-    "main.js": "/WS-Logviewer/static/js/main.a28183fa.js",
+    "main.js": "/WS-Logviewer/static/js/main.2a4f774d.js",
     "index.html": "/WS-Logviewer/index.html",
     "main.8cffd139.css.map": "/WS-Logviewer/static/css/main.8cffd139.css.map",
-    "main.a28183fa.js.map": "/WS-Logviewer/static/js/main.a28183fa.js.map"
+    "main.2a4f774d.js.map": "/WS-Logviewer/static/js/main.2a4f774d.js.map"
   },
   "entrypoints": [
     "static/css/main.8cffd139.css",
-    "static/js/main.a28183fa.js"
+    "static/js/main.2a4f774d.js"
   ]
 }
